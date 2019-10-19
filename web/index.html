@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <html>
@@ -59,59 +59,324 @@
   </header>
   <main>
     <section>
-      <div class="col">
-        <div class="card" id="data-card">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" id="data-card-navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="dropdown">
-              <button class='btn btn-primary btn-med dropdown-toggle'
-                style="-webkit-text-fill-color: white; width: 160px;" type="button" id="dropdown-menu"
-                data-toggle="dropdown">
-                Display Type <span class="carat"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li role="presentation">
-                  <a href='#' role="menuitem" tabindex="-1">Active</a>
-                </li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation">
-                  <a href='#' role="menuitem" tabindex="-2">Passive</a>
-                </li>
-              </ul>
+      <table class="table">
+        <tr>
+          <th scope="col">
+            <div class="card" id="data-card">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light" id="data-card-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown">
+                  <button class='btn btn-primary btn-med dropdown-toggle'
+                    style="-webkit-text-fill-color: white; width: 160px;" type="button" id="dropdown-menu"
+                    data-toggle="dropdown">
+                    Available Nodes <span class="carat"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-1">Node #353</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-2">Node #345</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-3">Node #842</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-4">Node #336</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-5">Node #752</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-6">Node #52</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-7">Node #93</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-8">Node #37</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-9">Node #256</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" style="-webkit-text-fill-color: whitesmoke"
+                      type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+              <div class="d3-line-graph">
+    
+    
+    
+                // INSERT d3 LINE GRAPH HERE !!!!
+    
+    
+    
+    
+              </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" style="-webkit-text-fill-color: whitesmoke"type="submit">Search</button>
-              </form>
+          </th>
+          <th scope="col">
+            <div class="card" id="data-card">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light" id="data-card-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown">
+                  <button class='btn btn-primary btn-med dropdown-toggle'
+                    style="-webkit-text-fill-color: white; width: 160px;" type="button" id="dropdown-menu"
+                    data-toggle="dropdown">
+                    Available Nodes <span class="carat"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-1">Node #353</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-2">Node #345</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-3">Node #842</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-4">Node #336</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-5">Node #752</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-6">Node #52</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-7">Node #93</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-8">Node #37</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-9">Node #256</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" style="-webkit-text-fill-color: whitesmoke"
+                      type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+              <div class="d3-line-graph">
+    
+    
+    
+                // INSERT d3 LINE GRAPH HERE !!!!
+    
+    
+    
+    
+              </div>
             </div>
-          </nav>
-          <div class="d3-line-graph">
-
-
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">
+            <div class="card" id="data-card">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light" id="data-card-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown">
+                  <button class='btn btn-primary btn-med dropdown-toggle'
+                    style="-webkit-text-fill-color: white; width: 160px;" type="button" id="dropdown-menu"
+                    data-toggle="dropdown">
+                    Available Nodes <span class="carat"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-1">Node #353</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-2">Node #345</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-3">Node #842</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-4">Node #336</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-5">Node #752</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-6">Node #52</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-7">Node #93</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-8">Node #37</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-9">Node #256</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" style="-webkit-text-fill-color: whitesmoke"
+                      type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+              <div class="d3-line-graph">
+    
+    
+    
+                // INSERT d3 LINE GRAPH HERE !!!!
+    
+    
+    
+    
+              </div>
+            </div>
+          </th>
+          <th scope="col">
+            <div class="card" id="data-card">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light" id="data-card-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown">
+                  <button class='btn btn-primary btn-med dropdown-toggle'
+                    style="-webkit-text-fill-color: white; width: 160px;" type="button" id="dropdown-menu"
+                    data-toggle="dropdown">
+                    Available Nodes <span class="carat"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-1">Node #353</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-2">Node #345</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-3">Node #842</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-4">Node #336</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-5">Node #752</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-6">Node #52</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-7">Node #93</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-8">Node #37</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                      <a href='#' role="menuitem" tabindex="-9">Node #256</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" style="-webkit-text-fill-color: whitesmoke"
+                      type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+              <div class="d3-line-graph">
+    
+    
+    
+                // INSERT d3 LINE GRAPH HERE !!!!
+    
+    
+    
+    
+              </div>
+            </div>
+          </th>
+        </tr>
+      </table>
       
-              // INSERT d3 LINE GRAPH HERE !!!!
-
-              
 
 
-          </div>
-        </div>
-      </div>
+        
     </section>
     <div class="container-fluid" id="container-gradient-underline">
 
@@ -119,7 +384,13 @@
   </main>
   <div class="container-fluid" id="container-underline-black"></div>
   <div class="team">
-    <h6>"Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</h6>
+    <h6>"Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+      similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+      facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+      quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+      Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+      repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+      reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</h6>
   </div>
 
 
