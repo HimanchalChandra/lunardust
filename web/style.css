@@ -1,0 +1,69 @@
+.team{
+    padding: 30px;
+}
+
+.banner-home{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    height: 500px;
+    text-align: center;
+    -webkit-text-fill-color:  white;
+    padding: 50px;
+}
+
+.card{
+    -webkit-text-fill-color: grey;
+    background-color: white;
+    height: 250px;
+}
+
+.section{
+    margin: 20px;
+    padding: 20px;
+}
+
+.divider {
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.footer{
+    height: 50px;
+    background-image: linear-gradient(to bottom left, yellow, red);
+}
+
+.dropdown-menu{
+    
+    margin-top: 4px;
+    text-align: center;
+}
+
+#data-card-navbar{
+    margin-left: 1px;
+    border-color: gray;
+    border-bottom-width: 10px;
+}
+
+#container-underline{
+    margin-top: 25px;
+    margin-bottom:30px;
+    height: 1.5px;
+    background-color: white;
+}
+
+#container-underline-gray{
+    margin-top: 25px;
+    margin-bottom:30px;
+    height: 1.5px;
+    background-color: black;
+}
+
+#data-card{
+    margin-top: 30px;
+    margin-bottom:30px;
+    height:700px;
+}
+
