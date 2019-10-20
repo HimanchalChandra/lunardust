@@ -102,6 +102,11 @@ div.circle-avatar{
     height:400px;
 }
 
+#project-plan-pdf{
+    height: 800px;
+    width: 100%;
+}
+
 #project-outline-text{
     margin: 10px;
     margin-bottom: 50px;
