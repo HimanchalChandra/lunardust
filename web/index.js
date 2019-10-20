@@ -124,11 +124,13 @@ d4 = [{
 	y: d4y,
 	type: "scatter"
 }];
-
+/*
 l1.xaxis = {title: "}
 l1.yaxis = {title: "Temp (deg C)"};
 l2.yaxis
+*/
 //
+
 
 var p1 = Plotly.newPlot("g1", d1, l1, {staticPlot: true});
 var p2 = Plotly.newPlot("g2", d2, l2, {staticPlot: true});

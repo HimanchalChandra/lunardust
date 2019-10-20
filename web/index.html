@@ -47,7 +47,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">Warning #1:</h5>
-            <p class="card-text">Node #336 has accumulated 0.5 inche(s) of dust.</p>
+            <p class="card-text">Node #336 has accumulated 0.5 inch(es) of dust.</p>
             <div style="justify-content: center">
                 <button class="btn-active btn-sm" type="submit" style="margin-right: 5px">◀</button>
                 <button class="btn-active btn-sm" type="submit">▶</button>
@@ -121,11 +121,9 @@
                       <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-link btn-sm" type="submit">Humidity</button>
-                    <button class="btn btn-link btn-sm" type="submit">Temperature</button>
-                    <button class="btn btn-link btn-sm" type="submit">Dust</button>
-                  </form>
+                  <button class="btn btn-link btn-sm" id="g1-h">Humidity</button>
+                  <button class="btn btn-link btn-sm" id="g1-t">Temperature</button>
+                  <button class="btn btn-link btn-sm" id="g1-d">Dust</button>
                 </div>
               </nav>
 
@@ -193,11 +191,9 @@
                       <a class="nav-link" href="#">Passive Data<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-link btn-sm" type="submit">Humidity</button>
-                    <button class="btn btn-link btn-sm" type="submit">Temperature</button>
-                    <button class="btn btn-link btn-sm" type="submit">Dust</button>
-                  </form>
+                  <button class="btn btn-link btn-sm" id="g2-h">Humidity</button>
+                  <button class="btn btn-link btn-sm" id="g2-t">Temperature</button>
+                  <button class="btn btn-link btn-sm" id="g2-d">Dust</button>
                 </div>
               </nav>
 
@@ -267,11 +263,9 @@
                       <a class="nav-link" href="#">Active Data<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-link btn-sm" type="submit">Humidity</button>
-                    <button class="btn btn-link btn-sm" type="submit">Temperature</button>
-                    <button class="btn btn-link btn-sm" type="submit">Dust</button>
-                  </form>
+                  <button class="btn btn-link btn-sm" id="g3-h">Humidity</button>
+                  <button class="btn btn-link btn-sm" id="g3-t">Temperature</button>
+                  <button class="btn btn-link btn-sm" id="g3-d">Dust</button>
                 </div>
               </nav>
 
@@ -339,11 +333,9 @@
                       <a class="nav-link" href="#">Passive Data<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-link btn-sm" type="submit">Humidity</button>
-                    <button class="btn btn-link btn-sm" type="submit">Temperature</button>
-                    <button class="btn btn-link btn-sm" type="submit">Dust</button>
-                  </form>
+                  <button class="btn btn-link btn-sm" id="g4-h">Humidity</button>
+                  <button class="btn btn-link btn-sm" id="g4-t">Temperature</button>
+                  <button class="btn btn-link btn-sm" id="g4-d">Dust</button>
                 </div>
               </nav>
 
@@ -480,6 +472,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="index.js"></script>
+<script src="plot.js"></script>
 
 </html>
