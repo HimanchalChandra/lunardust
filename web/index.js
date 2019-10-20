@@ -76,28 +76,58 @@ l4 = {
 };
 
 // random data code
-d1 = [{}];
-d2 = [{}];
-d3 = [{}];
-d4 = [{}];
+		
+d1y = [];
+d2y = [];
+d3y = [];
+d4y = [];
+x = [];
+a = false;
 
-function randDust();
+function randDust(){return Math.random()};
+function randTemp(){return (Math.random() * 20) + 20};
+function randHumid(){return Math.random() * 100};
 
-for(var i; i<100; i++){
-	var a = false;
-	var y = [];
+for(var i = 0; i<100; i++){
 	if(i % 15 == 0){
 		a = !a;
 	}
-	d2.append();
-	d4.append();
+	d2y.push(randTemp());
+	d4y.push(randTemp());
 	if(a){
-		d1.append();
-		d3.append();		
+		d1y.push(randTemp());
+		d3y.push(randTemp());		
+	}else{
+		d1y.push(0);
+		d3y.push(0);
 	}
-	y.append(i);
+	x.push(i);
 }
 
+d1 = [{
+	x: x,
+	y: d1y,
+	type: "scatter" 
+}];
+d2 = [{
+	x: x,
+	y: d2y,
+	type: "scatter"
+}];
+d3 = [{
+	x: x,
+	y: d3y,
+	type: "scatter"
+}];
+d4 = [{
+	x: x,
+	y: d4y,
+	type: "scatter"
+}];
+
+l1.xaxis = {title: "}
+l1.yaxis = {title: "Temp (deg C)"};
+l2.yaxis
 //
 
 var p1 = Plotly.newPlot("g1", d1, l1, {staticPlot: true});
@@ -106,8 +136,8 @@ var p3 = Plotly.newPlot("g3", d3, l3, {staticPlot: true});
 var p4 = Plotly.newPlot("g4", d4, l4, {staticPlot: true});
 
 window.onresize = function(){
-	Plotly.plots.resize(p1);
-	Plotly.plots.resize(p2);
-	Plotly.plots.resize(p3);
-	Plotly.plots.resize(p4);
+	Plotly.Plots.resize(p1);
+	Plotly.Plots.resize(p2);
+	Plotly.Plots.resize(p3);
+	Plotly.Plots.resize(p4);
 };
