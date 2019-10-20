@@ -1,73 +1,113 @@
-var lineData = [{
-    x: 1,
-    y: 5
-  }, {
-    x: 20,
-    y: 20
-  }, {
-    x: 40,
-    y: 10
-  }, {
-    x: 60,
-    y: 40
-  }, {
-    x: 80,
-    y: 5
-  }, {
-    x: 100,
-    y: 60
-  }];
+var d1 = {};
+var l1 = {};
+var d2 = {};
+var l2 = {};
+var d3 = {};
+var l3 = {};
+var d4 = {};
+var l4 = {};
 
-  var vis = d3.select('#visualisation'),
-  WIDTH = 1000,
-  HEIGHT = 500,
-  MARGINS = {
-    top: 20,
-    right: 20,
-    bottom: 20,
-    left: 50
-  },
-  xRange = d3.scale.linear().range([MARGINS.left, WIDTH - MARGINS.right]).domain([d3.min(lineData, function(d) {
-    return d.x;
-  }), d3.max(lineData, function(d) {
-    return d.x;
-  })]),
-  yRange = d3.scale.linear().range([HEIGHT - MARGINS.top, MARGINS.bottom]).domain([d3.min(lineData, function(d) {
-    return d.y;
-  }), d3.max(lineData, function(d) {
-    return d.y;
-  })]),
-  xAxis = d3.svg.axis()
-    .scale(xRange)
-    .tickSize(5)
-    .tickSubdivide(true),
-  yAxis = d3.svg.axis()
-    .scale(yRange)
-    .tickSize(5)
-    .orient('left')
-    .tickSubdivide(true);
 
-vis.append('svg:g')
-.attr('class', 'x axis')
-.attr('transform', 'translate(0,' + (HEIGHT - MARGINS.bottom) + ')')
-.call(xAxis);
+$("#g1").empty();
+$("#g2").empty();
+$("#g3").empty();
+$("#g4").empty();
 
-vis.append('svg:g')
-.attr('class', 'y axis')
-.attr('transform', 'translate(' + (MARGINS.left) + ',0)')
-.call(yAxis);
+d1 = [{
+	x: [1,2,3,4,5,6,7,8],
+	y: [1,2,3,4,5,6,7,8],
+	type: "scatter"
+}];
+l1 = {
+    autosize: true,
+    height: 325,
+    margin: {
+        l: 25,
+        r: 25,
+        t: 25,
+        b: 25
+    }
+};
 
-var lineFunc = d3.svg.line()
-  .x(function(d) {
-    return xRange(d.x);
-  })
-  .y(function(d) {
-    return yRange(d.y);
-  })
-  .interpolate('linear');
+d2 = [{
+	x: [1,2,3,4,5,6,7,8],
+	y: [2,4,6,8,10,12,14,16],
+	type: "scatter"
+}];
+l2 = {
+    autosize: true,
+    height: 325,
+    margin: {
+        l: 25,
+        r: 25,
+        t: 25,
+        b: 25
+    }
+};
+d3 = [{
+	x: [1,2,3,4,5,6,7,8],
+	y: [3,6,9,12,15,18,21,24],
+	type: "scatter"	
+}];
+l3 = {
+    autosize: true,
+    height: 325,
+    margin: {
+        l: 25,
+        r: 25,
+        t: 25,
+        b: 25
+    }
+};
+d4 = [{
+	x: [1,2,3,4,5,6,7,8],
+	y: [4,8,12,16,20,24,28,32],
+	type: "scatter"
+}];
+l4 = {
+	autosize: true,
+	height: 325,
+	margin: {
+		l: 25,
+		r: 25,
+		t: 25,
+		b: 25
+	}
+};
 
-  vis.append('svg:path')
-  .attr('d', lineFunc(lineData))
-  .attr('stroke', 'blue')
-  .attr('stroke-width', 2)
-  .attr('fill', 'none');
+// random data code
+d1 = [{}];
+d2 = [{}];
+d3 = [{}];
+d4 = [{}];
+
+function randDust();
+
+for(var i; i<100; i++){
+	var a = false;
+	var y = [];
+	if(i % 15 == 0){
+		a = !a;
+	}
+	d2.append();
+	d4.append();
+	if(a){
+		d1.append();
+		d3.append();		
+	}
+	y.append(i);
+}
+
+//
+
+var p1 = Plotly.newPlot("g1", d1, l1, {staticPlot: true});
+var p2 = Plotly.newPlot("g2", d2, l2, {staticPlot: true});
+var p3 = Plotly.newPlot("g3", d3, l3, {staticPlot: true});
+var p4 = Plotly.newPlot("g4", d4, l4, {staticPlot: true});
+
+window.onresize = function(){
+	Plotly.plots.resize(p1);
+	Plotly.plots.resize(p2);
+	Plotly.plots.resize(p3);
+	Plotly.plots.resize(p4);
+};
